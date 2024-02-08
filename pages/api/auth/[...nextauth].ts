@@ -6,7 +6,7 @@ import Github from "next-auth/providers/github";
 import Google from "next-auth/providers/google";
 import bcrypt from "bcrypt";
 
-const authOptions: AuthOptions = {
+export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     Google({
@@ -26,7 +26,7 @@ const authOptions: AuthOptions = {
         },
         password: {
           label: "password",
-          type: "text",
+          type: "password",
         },
       },
       async authorize(credentials) {
