@@ -3,7 +3,7 @@
 interface HeadingProps {
   title: string;
   subtitle: string;
-  center: boolean;
+  center?: boolean;
 }
 
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
