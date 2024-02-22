@@ -48,15 +48,15 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
         <div className="flex flex-row items-center gap-4 font-light text-neutral-500">
           <div className="flex flex-row gap-2">
             <FaPerson size={20} />
-            <div>{guestCount}</div>
+            <div>Guests {guestCount}</div>
           </div>
           <div className="flex flex-row gap-2">
             <IoBed size={20} />
-            <div>{roomCount} </div>
+            <div>Rooms {roomCount} </div>
           </div>
           <div className="flex flex-row gap-2">
             <FaBath size={20} />
-            <div>{bathroomCount}</div>
+            <div>Bathrooms {bathroomCount}</div>
           </div>
         </div>
       </div>
