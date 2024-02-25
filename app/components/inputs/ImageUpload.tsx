@@ -16,7 +16,6 @@ interface ImageUploadProps {
 
 const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
   const preset = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_UPLOAD_PRESET;
-  console.log("preset", preset);
   const handleUpload = useCallback(
     (result: any) => {
       onChange(result.info.secure_url);
@@ -61,6 +60,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
                   fill
                   style={{ objectFit: "cover" }}
                   src={value}
+                  priority={false}
                 ></Image>
               </div>
             )}

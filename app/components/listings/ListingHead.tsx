@@ -42,6 +42,7 @@ const ListingHead: React.FC<ListingHeadProps> = ({
           alt={`image of ${title}`}
           fill
           className="object-cover w-full "
+          priority={true}
         />
         <div className="absolute top-5 right-5">
           <HeartButton listingId={id} currentUser={currentUser} />
