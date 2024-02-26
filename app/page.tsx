@@ -5,11 +5,11 @@ import Container from "./components/shared/Container";
 import EmptyState from "./components/shared/EmptyState";
 
 interface HomeProps {
-  searchParams: IListingParams;
+  params: IListingParams;
 }
 
-const Home = async ({ searchParams }: HomeProps) => {
-  const allListings = await getListings(searchParams);
+const Home = async ({ params }: HomeProps) => {
+  const allListings = await getListings(params);
 
   if (allListings.length === 0) {
     return <EmptyState showReset />;
