@@ -1,10 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { title } from "process";
 import Heading from "./Heading";
 import Button from "./Button";
-import { MouseEvent } from "react";
 
 interface EmptyStateProps {
   title?: string;

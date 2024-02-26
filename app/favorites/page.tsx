@@ -1,6 +1,4 @@
-import { useState, useCallback } from "react";
-import { useRouter } from "next/navigation";
-
+import { Suspense } from "react";
 import EmptyState from "../components/shared/EmptyState";
 
 import getCurrentUser from "../actions/getCurrentUser";
@@ -29,10 +27,12 @@ const Listing = async () => {
   }
 
   return (
-    <FavoriteClient
-      currentUser={currentUser}
-      listings={favorites}
-    ></FavoriteClient>
+    <Suspense>
+      <FavoriteClient
+        currentUser={currentUser}
+        listings={favorites}
+      ></FavoriteClient>
+    </Suspense>
   );
 };
 

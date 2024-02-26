@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import getListings, { IListingParams } from "./actions/getListings";
 import Listing from "./components/listings/Listing";
 import Container from "./components/shared/Container";
@@ -29,7 +30,9 @@ const Home = async ({ searchParams }: HomeProps) => {
           gap-8
         "
       >
-        <Listing listings={allListings}></Listing>
+        <Suspense>
+          <Listing listings={allListings}></Listing>
+        </Suspense>
       </div>
     </Container>
   );
