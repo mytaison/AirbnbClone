@@ -11,7 +11,12 @@ const Listing: React.FC<ListingProps> = async ({ listings }) => {
   const currentUser = await getCurrentUser();
 
   return listings.map((item, index) => (
-    <ListingCard key={index.toString()} data={item} currentUser={currentUser} />
+    <ListingCard
+      key={item.id}
+      data={item}
+      currentUser={currentUser}
+      keyId={item.id}
+    />
   ));
 };
 
