@@ -1,5 +1,5 @@
 ## Airbnb Clone 
-This project is built with NextJS 14, TypeScript, Next-Auth, MongoDB, Prima, TailwindCSS, Cloudinary. 
+This project is built with NextJS 14, TypeScript, Next-Auth, MongoDB, Prisma, TailwindCSS, Cloudinary. 
 The sole purpose of this project is to explore the features of NextJS 14 and doing some UI practise. For state management I have used Zustand. To host the application I have used MongoDB Atlas, Vercel and Cloudinary services. 
 
 ## Live Demo
