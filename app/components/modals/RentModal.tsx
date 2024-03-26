@@ -286,7 +286,7 @@ const RentModal = () => {
       actionLabel={actionLabel}
       secodaryActionLabel={secondaryLabel}
       secondaryAction={onBack}
-      title="Airbnb your home!"
+      title="Airybnb your home!"
       body={bodyContent}
       disabled={submitDisabled}
     />
